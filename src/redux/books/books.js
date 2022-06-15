@@ -1,4 +1,11 @@
-const books = [];
+const books = [
+  {
+    id: 1,
+    title: 'Sherlock Holmes',
+    author: 'Sir Arthur Conan Doyle',
+    progress: 42,
+  },
+];
 
 export default function reducer(state = books, action) {
   if (action.type === 'ADD_BOOK') {
