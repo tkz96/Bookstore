@@ -5,6 +5,7 @@ const Form = ({ handleSubmit }) => (
   <form onSubmit={handleSubmit}>
     <input type="text" placeholder="Author Name" />
     <input type="text" placeholder="Book Title" />
+    <input type="text" placeholder="Category" />
     <Button type="submit" title="add book" />
   </form>
 );

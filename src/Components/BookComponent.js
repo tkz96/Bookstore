@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 
 const Book = ({
   // eslint-disable-next-line react/prop-types
-  category, title, author, progress, chapter, removeBook,
+  category, title, author, progress, chapter, rmBook,
 }) => (
   <div>
     <div>
@@ -11,7 +11,7 @@ const Book = ({
       <p>{author}</p>
       <div>
         <p>Comments</p>
-        <button type="button" onClick={removeBook}>Remove</button>
+        <button type="button" onClick={rmBook}>Remove</button>
         <p>Edit</p>
       </div>
     </div>

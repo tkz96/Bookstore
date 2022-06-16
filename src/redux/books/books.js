@@ -3,12 +3,14 @@ const books = [
     id: 1,
     title: 'Sherlock Holmes',
     author: 'Sir Arthur Conan Doyle',
+    category: 'Mystery',
     progress: 42,
   },
   {
     id: 2,
     title: 'The Kite Runner',
     author: 'Khalid Hosseini',
+    category: 'Historical Fiction',
     progress: 68,
   },
 ];
