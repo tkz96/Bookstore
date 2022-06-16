@@ -10,14 +10,18 @@ const Books = () => {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    const { author, title, category } = e.target.elements;
+    // const { author, title, category } = e.target.elements;
+    const author = e.target.elements[0].value;
+    const title = e.target.elements[1].value;
+    const category = e.target.elements[2].value;
+    // console.log(e.target.elements[0].value);
 
     dispatch(
       addBook({
-        id: bookList.length,
-        author: author.value,
-        title: title.value,
-        category: category.value,
+        id: bookList.length + 1,
+        author,
+        title,
+        category,
       }),
     );
   };
@@ -33,9 +37,9 @@ const Books = () => {
             }) => (
               <Book
                 key={id}
+                cat={category}
                 tit={title}
                 aut={author}
-                cat={category}
                 pro="42"
                 cha="Chapter 12"
                 rmBook={() => dispatch(removeBook({ id }))}

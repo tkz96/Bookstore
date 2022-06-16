@@ -13,6 +13,13 @@ const books = [
     category: 'Historical Fiction',
     progress: 68,
   },
+  {
+    id: 3,
+    title: 'Alice In Wonderland',
+    author: 'Lewis Carroll',
+    category: 'Fiction',
+    progress: 68,
+  },
 ];
 
 export function addBook({
