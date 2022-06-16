@@ -1,6 +1,7 @@
 import { PropTypes } from 'prop-types';
 
 const Book = ({
+  // eslint-disable-next-line react/prop-types
   category, title, author, progress, chapter, removeBook,
 }) => (
   <div>
@@ -23,7 +24,7 @@ const Book = ({
     <div>
       <p>Current Chapter</p>
       <p>{chapter}</p>
-      <button type="button">update progress</button>
+      <button type="button">Update Progress</button>
     </div>
   </div>
 );
@@ -34,7 +35,6 @@ Book.propTypes = {
   author: PropTypes.string.isRequired,
   progress: PropTypes.string.isRequired,
   chapter: PropTypes.string.isRequired,
-  removeBook: PropTypes.func,
 };
 
 export default Book;

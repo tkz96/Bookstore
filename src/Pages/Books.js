@@ -11,22 +11,22 @@ const Books = () => {
   const formSubmit = (e) => {
     e.preventDefault();
     const { author, title } = e.target.elements;
-  };
 
-  dispatch(
-    addBook({
-      id: bookList.length,
-      author: author.value,
-      title: title.value,
-    }),
-  );
+    dispatch(
+      addBook({
+        id: bookList.length,
+        author: author.value,
+        title: title.value,
+      }),
+    );
+  };
 
   return (
     <>
       <Header />
       <div className="book-container">
         {
-          bookList.map(({ id, title, author }) => (<Book key={id} title={title} author={author} />))
+          bookList.map(({ id, author, title }) => (<Book key={id} tit={title} aut={author} />))
         }
         <hr />
 
