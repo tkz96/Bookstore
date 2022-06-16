@@ -1,7 +1,7 @@
 import Button from './Button';
 
-const Form = () => (
-  <form>
+const Form = ({ handleSubmit }) => (
+  <form onSubmit={handleSubmit}>
     <input type="text" placeholder="Book Title" />
     <input type="text" placeholder="Author Name" />
     <Button type="submit" title="add book" />

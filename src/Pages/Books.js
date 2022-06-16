@@ -1,25 +1,40 @@
+import { useDispatch, useSelector } from 'react-redux';
 import Book from '../Components/BookComponent';
 import Form from '../Components/Form';
 import Header from '../Components/Header';
+import { addBook } from '../redux/books/books';
 
-const Books = () => (
-  <>
-    <Header />
-    <div className="book-container">
-      <Book
-        cat="action"
-        tit="the hunger games"
-        auth="suzanne collins"
-        prog="60%"
-        chap="chapter 17"
-      />
+const Books = () => {
+  const dispatch = useDispatch();
+  const bookList = useSelector((state) => state.books);
 
-      <hr className="mt-5 mb-5" />
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const { author, title } = e.target.elements;
+  };
 
-      <h2 className="title">add new Book</h2>
-      <Form />
-    </div>
-  </>
-);
+  dispatch(
+    addBook({
+      id: bookList.length,
+      author: author.value,
+      title: title.value,
+    }),
+  );
+
+  return (
+    <>
+      <Header />
+      <div className="book-container">
+        {
+          bookList.map(({ id, title, author }) => (<Book key={id} title={title} author={author} />))
+        }
+        <hr />
+
+        <h2 className="title">Add New Book</h2>
+        <Form handleSubmit={formSubmit} />
+      </div>
+    </>
+  );
+};
 
 export default Books;

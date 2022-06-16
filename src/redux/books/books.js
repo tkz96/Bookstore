@@ -5,27 +5,13 @@ const books = [
     author: 'Sir Arthur Conan Doyle',
     progress: 42,
   },
+  {
+    id: 2,
+    title: 'The Kite Runner',
+    author: 'Khalid Hosseini',
+    progress: 68,
+  },
 ];
-
-export default function reducer(state = books, action) {
-  if (action.type === 'ADD_BOOK') {
-    return [
-      ...state,
-      {
-        id: action.id,
-        category: action.category,
-        title: action.title,
-        author: action.author,
-        progress: action.progress,
-        chapter: action.chapter,
-      },
-    ];
-  }
-  if (action.type === 'REMOVE_BOOK') {
-    return state.filter((book) => book.id !== action.id);
-  }
-  return state;
-}
 
 export function addBook({
   id, category, title, author, progress, chapter,
@@ -43,4 +29,24 @@ export function addBook({
 
 export function removeBook({ id }) {
   return { type: 'REMOVE_BOOK', id };
+}
+
+export default function bookReducer(state = books, action) {
+  if (action.type === 'ADD_BOOK') {
+    return [
+      ...state,
+      {
+        id: action.id,
+        category: action.category,
+        title: action.title,
+        author: action.author,
+        progress: action.progress,
+        chapter: action.chapter,
+      },
+    ];
+  }
+  if (action.type === 'REMOVE_BOOK') {
+    return state.filter((book) => book.id !== action.id);
+  }
+  return state;
 }
