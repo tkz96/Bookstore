@@ -1,6 +1,6 @@
 const categories = [];
 
-export default function reducer(state = categories, action) {
+export default function categoryReducer(state = categories, action) {
   if (action.type === 'CHECK_STATUS') {
     return 'Under Construction';
   }
