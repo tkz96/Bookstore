@@ -1,30 +1,35 @@
 import { PropTypes } from 'prop-types';
+import '../styles/Books.css';
 
 const Book = ({
   // eslint-disable-next-line react/prop-types
   cat, tit, aut, pro, cha, rmBook,
 }) => (
-  <div>
+  <div className="book-container">
     <div>
-      <p>{cat}</p>
-      <h2>{tit}</h2>
-      <p>{aut}</p>
-      <div>
-        <p>Comments</p>
-        <button type="button" onClick={rmBook}>Remove</button>
-        <p>Edit</p>
+      <p className="book-category">{cat}</p>
+      <h2 className="book-title">{tit}</h2>
+      <p className="author">{aut}</p>
+      <div className="book-buttons-container">
+        <p className="book-buttons">Comments</p>
+        <span className="Line-2" />
+        <button type="button" className="book-buttons" onClick={rmBook}>Remove</button>
+        <span className="Line-2" />
+        <p className="book-buttons">Edit</p>
       </div>
     </div>
-    <div>
+    <div className="progress">
+      <div className="Oval-2" />
       <div className="progress-circle">
-        <div>{pro}</div>
+        <div className="Percent-Complete">{pro}</div>
+        <div className="Completed">Completed</div>
       </div>
-      <div>Completed</div>
     </div>
+    <span className="separation-line" />
     <div>
-      <p>Current Chapter</p>
-      <p>{cha}</p>
-      <button type="button">Update Progress</button>
+      <p className="current-chapter">CURRENT CHAPTER</p>
+      <p className="chapter-number">{cha}</p>
+      <button type="button" className="update-progress">UPDATE PROGRESS</button>
     </div>
   </div>
 );

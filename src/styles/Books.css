@@ -1,8 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .book-container {
+    display: flex;
     margin: 2rem auto;
-  width: 90%;
+    width: 90%;
+    margin: 2rem 6.25rem;
+    padding: 2rem 9.188rem 1.625rem 1.688rem;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 31px -8px rgba(0, 0, 0, 0.19);
+}
+
+.book-container>* {
+    font-family: 'Roboto Slab', serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
+.book-category {
+    font-family: 'Montserrat', sans-serif;
+    height: 1.125rem;
+    margin: 0 4rem 0 0;
+    opacity: 0.5;
+    font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.book-title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    width: 22.813rem;
+    height: 1.813rem;
+    color: #121212;
+}
+
+.author {
+    height: 1.188rem;
+    margin: 0.25rem 0 0;
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: #4386bf;
+}
+
+.book-buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.book-buttons {
+    font-family: 'Roboto Slab', serif;
+    width: 3.375rem;
+    height: 1.188rem;
+    margin: 0.188rem 0.938rem 0.125rem 0;
+    font-size: 0.875rem;
+    font-weight: 300;
+    background-color: #fff;
+    border: none;
+    letter-spacing: normal;
+    color: #4386bf;
+}
+
+.book-buttons:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.book-buttons:active {
+    color: aqua;
+}
+
+.Line-2 {
+    height: 1.5rem;
+    margin: 0.75rem 1.063rem 0 0.938rem;
+    border: solid 1px #e8e8e8;
+}
+
+.separation-line {
+    height: 4.375rem;
+    margin: 1.125rem 3rem 0 3rem;
+    border: solid 1px #e8e8e8;
+}
+
+.Oval-2 {
+    border-color: #dcdcdc blue blue #dcdcdc;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    height: 70px;
+    margin: 0 2rem;
+    transform: rotate(-20deg);
+    width: 70px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+}
+
+.Percent-Complete {
+    width: 4.25rem;
+    height: 2.438rem;
+    font-size: 2rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.update-progress {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    border: none;
+    width: 11.5rem;
+    height: 2.063rem;
+    margin: 0.75rem 0.25rem;
+    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+    border-radius: 3px;
+    background-color: #0290ff;
+}
+
+.current-chapter {
+    width: 7.875rem;
+    height: 1.125rem;
+    margin: 0.438rem 0.25rem;
+    opacity: 0.5;
+    font-size: 0.813rem;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.chapter-number {
+    width: 4.688rem;
+    height: 1.313rem;
+    margin: 0.438rem 0.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.4px;
+    color: #121212;
+}
+
+.form-title {
+    font-family: 'Roboto Slab', serif;
+}
+
+.form-section {
+    margin: 2rem 6.25rem;
 }
 
 form {
@@ -11,9 +158,30 @@ form {
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-  }
+}
 
-  .btn-add-book {
+form>input {
+    font-family: 'Montserrat', sans-serif;
+    height: 2.813rem;
+    padding: 0.813rem;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+}
+
+form button {
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    color: #fff;
+    width: 11.5rem;
+    height: 2.813rem;
+    margin: 1.188rem 0 0 2.125rem;
+    padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+    border-radius: 3px;
+    background-color: #0290ff;
+}
+
+.btn-add-book {
     padding: 0.8rem;
     border-radius: 3px;
     background-color: #0290ff;
@@ -22,4 +190,4 @@ form {
     border: none;
     outline: none;
     font-size: 1rem;
-  }
+}
