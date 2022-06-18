@@ -4,10 +4,8 @@ header {
     display: flex;
     gap: 2.8rem;
     font-family: 'Montserrat', sans-serif;
-    width: 87.5rem;
     height: 5.938rem;
-    margin: 0 0 2.375rem;
-    padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+    padding: 1.688rem 6.25rem;
     background-color: #fff;
 }
 
@@ -20,6 +18,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    font-size: 0.813rem;
 }
 
 li {

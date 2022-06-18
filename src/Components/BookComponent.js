@@ -6,7 +6,7 @@ const Book = ({
   cat, tit, aut, pro, cha, rmBook,
 }) => (
   <div className="book-container">
-    <div>
+    <div className="book-child1">
       <p className="book-category">{cat}</p>
       <h2 className="book-title">{tit}</h2>
       <p className="author">{aut}</p>
@@ -18,15 +18,15 @@ const Book = ({
         <p className="book-buttons">Edit</p>
       </div>
     </div>
-    <div className="progress">
+    <div className="book-child2">
       <div className="Oval-2" />
       <div className="progress-circle">
         <div className="Percent-Complete">{pro}</div>
         <div className="Completed">Completed</div>
       </div>
+      <span className="separation-line" />
     </div>
-    <span className="separation-line" />
-    <div>
+    <div className="book-child3">
       <p className="current-chapter">CURRENT CHAPTER</p>
       <p className="chapter-number">{cha}</p>
       <button type="button" className="update-progress">UPDATE PROGRESS</button>

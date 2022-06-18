@@ -50,7 +50,7 @@ const Books = () => {
         }
         <hr className="form-separator" />
         <div className="form-section">
-          <h2 className="form-title">Add New Book</h2>
+          <h2 className="form-title">ADD NEW BOOK</h2>
           <Form handleSubmit={formSubmit} />
         </div>
       </div>
