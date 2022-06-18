@@ -4,6 +4,7 @@ import Book from '../Components/BookComponent';
 import Form from '../Components/Form';
 import Header from '../Components/Header';
 import { addBook, removeBook, fetchBooks } from '../redux/books/books';
+import '../styles/Books.css';
 
 const Books = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const Books = () => {
   return (
     <>
       <Header />
-      <div className="book-container">
+      <div className="book-page">
         {
           bookList.map(
             ({
@@ -40,17 +41,18 @@ const Books = () => {
                 cat={category}
                 tit={title}
                 aut={author}
-                pro="42"
+                pro="42%"
                 cha="Chapter 12"
                 rmBook={() => dispatch(removeBook({ id }))}
               />
             ),
           )
         }
-        <hr />
-
-        <h2 className="title">Add New Book</h2>
-        <Form handleSubmit={formSubmit} />
+        <hr className="form-separator" />
+        <div className="form-section">
+          <h2 className="form-title">ADD NEW BOOK</h2>
+          <Form handleSubmit={formSubmit} />
+        </div>
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { checkStatus } from '../redux/categories/categories';
 import Header from '../Components/Header';
 import Button from '../Components/Button';
+import '../styles/Categories.css';
 
 const Categories = () => {
   const status = useSelector((state) => state.categories);

@@ -1,0 +1,12 @@
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    border: none;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: #0290ff;
+}
