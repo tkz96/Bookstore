@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
 
 export default function Header() {
   return (
@@ -6,10 +7,10 @@ export default function Header() {
       <h1>Bookstore CMS</h1>
       <ul>
         <li>
-          <Link to="/">Books</Link>
+          <Link to="/">BOOKS</Link>
         </li>
         <li>
-          <Link to="/Categories">Categories</Link>
+          <Link to="/Categories">CATEGORIES</Link>
         </li>
       </ul>
     </header>

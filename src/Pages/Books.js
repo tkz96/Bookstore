@@ -4,6 +4,7 @@ import Book from '../Components/BookComponent';
 import Form from '../Components/Form';
 import Header from '../Components/Header';
 import { addBook, removeBook, fetchBooks } from '../redux/books/books';
+import '../styles/Books.css';
 
 const Books = () => {
   const dispatch = useDispatch();
