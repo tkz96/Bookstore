@@ -11,7 +11,8 @@ header {
     background-color: #fff;
 }
 
-h1 {
+header h1 {
+    font-family: 'Montserrat', sans-serif;
     color: #0290ff
 }
 
