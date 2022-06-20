@@ -1,4 +1,4 @@
-# Math-Magicians
+# Book Store CMS
 
 This repository is dedicated to the Bookstore CMS Project for Module 3 at Microverse.
 ![](https://img.shields.io/badge/Microverse-blueviolet)
