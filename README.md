@@ -5,7 +5,7 @@ This repository is dedicated to the Bookstore CMS Project for Module 3 at Microv
 
 # Link to Live Version
 
-Not deployed yet
+[Live on Netlify](https://splendid-manatee-568634.netlify.app/)
 
 ## Built With
 
